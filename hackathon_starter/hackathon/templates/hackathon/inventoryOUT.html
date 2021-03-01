@@ -1,0 +1,54 @@
+<html>
+{% include 'hackathon/base.html' %}
+<head>
+	<style>
+		table {
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 50%;
+		  margin:auto;
+		}
+		
+		td, th {
+		  border: 1px solid #dddddd;
+		  text-align: left;
+		  padding: 8px;
+		}
+		
+		tr:nth-child(even) {
+		  background-color: #dddddd;
+		}
+		</style>
+</head>
+<body>
+
+
+	<div class="row text-center">
+		<h3><u>Inventory Out</u></h3>
+		<br>
+		<label>Search - </label>
+		<input type="text">
+		<button>Search</button>
+		<br>
+		<br>
+		<table>
+			<thead>
+				<tr>
+					<th>S.No</th>
+					<th>Book Name</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Harry Potter</td>
+					<td><button>Take Out</button></td>
+				</tr>
+			</tbody>
+		</table>
+  	</div>
+
+
+</body>
+</html>
