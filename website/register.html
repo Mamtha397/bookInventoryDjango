@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css
+">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Book Inventory</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__hamburger">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </div>
+
+          <div class="nav__logo">
+            <a href="/website/index.html" class="scroll-link">
+              BOOK
+            </a>
+          </div>
+
+          <div class="nav__menu">
+            <div class="menu__top">
+              <span class="nav__category">BOOK</span>
+              <a href="/website/index.html" class="close__toggle">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/website/index.html" class="nav__link scroll-link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="/website/register.html" class="nav__link scroll-link">Register</a>
+              </li>
+              <li class="nav__item">
+                <a href="/website/login.html" class="nav__link scroll-link">Login</a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <form class="form-signin" id="login_form" method="post" action="/hackathon/login/" style="margin: auto; width: 17%; margin-top: 30px;">
+    <h2 class="form-signin-heading">Register form</h2>
+    <br>
+    <br>
+    <label>Email - </label>
+    <input type="text" name="username" class="form-control" placeholder="Email" value="" id="email" required autofocus>
+    <br>
+    <br>
+    <label>UserName - </label>
+    <input type="text" name="username" class="form-control" placeholder="Username" value="" id="userName" required autofocus>
+    <br>
+    <br>
+    <label>Password - </label>
+    <input type="password" name="password" class="form-control" placeholder="Password" value="" id="password" required>
+    <br>
+    <br>
+    <button type="button" onclick="createUser()">Register</button>
+    <input type="hidden" name="submit" value="submit" />
+  </form>
+
+  <h1 id="success"></h1>
+
+  <a href="#header" class="goto-top scroll-link">
+    <svg>
+      <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
+    </svg>
+  </a>
+
+
+  <!-- Glide Carousel Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JavaScript -->
+  <!-- <script src="./js/products.js"></script> -->
+  <script src="./js/register.js"></script>
+  <!-- <script src="./js/slider.js"></script> -->
+
+</body>
+
+</html>

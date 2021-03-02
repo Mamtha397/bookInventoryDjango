@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css
+">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Book Inventory</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__hamburger">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </div>
+
+          <div class="nav__logo">
+            <a href="/website/index.html" class="scroll-link">
+              BOOK
+            </a>
+          </div>
+
+          <div class="nav__menu">
+            <div class="menu__top">
+              <span class="nav__category">BOOK</span>
+              <a href="/website/index.html" class="close__toggle">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/website/account.html" class="nav__link scroll-link">Account</a>
+              </li>
+              <li class="nav__item">
+                <a href="/website/inventoryIn.html" class="nav__link scroll-link">Inventory-In</a>
+              </li>
+              <li class="nav__item">
+                <a href="/website/inventoryOut.html" class="nav__link scroll-link">Inventory-Out</a>
+              </li>
+              <li class="nav__item">
+                <a onclick="logout()">Log-Out</a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <table style="margin: auto; margin-top: 20px;">
+      <thead>
+        <tr>
+            <th>Book Name</th>
+            <th>Inventory In</th>
+            <th>Inventory Out</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+  </table>
+
+  <a href="#header" class="goto-top scroll-link">
+    <svg>
+      <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
+    </svg>
+  </a>
+
+
+  <!-- Glide Carousel Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JavaScript -->
+  <!-- <script src="./js/products.js"></script> -->
+  <script src="./js/account.js"></script>
+  <!-- <script src="./js/slider.js"></script> -->
+
+</body>
+
+</html>
